@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyles = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #EEECE5;
 }
 ol, ul {
 	list-style: none;
@@ -41,3 +45,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a {
+	color: inherit;
+	text-decoration: inherit;
+	box-sizing: border-box;
+}
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+`;
+
+export default GlobalStyles;
